@@ -59,7 +59,16 @@ delivery_df['player_dismissed']=delivery_df['player_dismissed'].fillna("0")
 delivery_df['wicket']=delivery_df['player_dismissed'].apply(lambda x:0 if x=="0" else 1)
 delivery_df['wicket']=delivery_df.groupby('match_id')['wicket'].cumsum()
 delivery_df['wicket_left']=10-delivery_df['wicket']
-'''
+# '''
+# import streamlit as st
+# import pandas as pd
+# import numpy as np
+
+# from sklearn.pipeline import Pipeline
+# from sklearn.compose import ColumnTransformer
+# from sklearn.preprocessing import OneHotEncoder
+# from sklearn.ensemble import RandomForestClassifier
+# pd.set_option('display.max_columns',None)
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -68,7 +77,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
-pd.set_option('display.max_columns',None)
 
 match=pd.read_csv('C:/Users/abhay/csv/Gen_Final_df_of_Cricket.csv')
 st.title('IPL Win Predictor')
