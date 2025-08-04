@@ -60,12 +60,9 @@ delivery_df['wicket']=delivery_df['player_dismissed'].apply(lambda x:0 if x=="0"
 delivery_df['wicket']=delivery_df.groupby('match_id')['wicket'].cumsum()
 delivery_df['wicket_left']=10-delivery_df['wicket']
 '''
-
+import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import streamlit as st
 
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
