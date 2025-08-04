@@ -78,7 +78,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
 
-match=pd.read_csv('C:/Users/abhay/csv/Gen_Final_df_of_Cricket.csv')
+match=pd.read_csv('Gen_Final_df_of_Cricket.csv')
 st.title('IPL Win Predictor')
 
 
