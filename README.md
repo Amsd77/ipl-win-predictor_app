@@ -1,0 +1,44 @@
+# 🏏 IPL Win Predictor
+
+A machine learning-powered **IPL match win predictor** built with **Streamlit**.  
+Given the current match situation (target, score, overs, wickets), the app predicts the **probability of the batting team winning** and visualizes how this probability changes over the remaining overs.
+
+---
+
+## 🚀 Features
+- Interactive **Streamlit web app**
+- Choose **batting team, bowling team, and venue**
+- Enter match details: target, score, overs, wickets
+- Predict **win probability (%)**
+- Visualize **probability progression** until 20 overs
+- Built using:
+  - `scikit-learn` (Random Forest + pipeline)
+  - `pandas`, `numpy`
+  - `matplotlib` / `plotly` for visualization
+  - `streamlit` for deployment
+
+---
+
+## 📊 Example
+- **Target:** 156  
+- **Score:** 80/2 after 5 overs  
+- The app predicts:  
+  - Batting team: **93% win probability**  
+  - Bowling team: **7% win probability**  
+- Graph shows win probability curve across remaining overs.
+
+---
+
+## 🛠️ Installation & Usage
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/ipl_win_predictor.git
+cd ipl_win_predictor
+
+- **Matplotlib / Seaborn** for exploratory analysis (optional)
+
+---
+
+
+
