@@ -1,39 +1,41 @@
-# 🏏 IPL Win Predictor — Machine Learning Web App
+# 🏏 IPL Win Predictor
 
-This project is a deployed machine learning web application that predicts the win probability of a team during an ongoing IPL (Indian Premier League) match based on live match data.
-
-### 🚀 Live Demo
-👉 [Click here to try the app](https://ipl-win-predictor-app.streamlit.app/)
+A machine learning-powered **IPL match win predictor** built with **Streamlit**.  
+Given the current match situation (target, score, overs, wickets), the app predicts the **probability of the batting team winning** and visualizes how this probability changes over the remaining overs.
 
 ---
 
-## 📊 Project Overview
-
-- Predicts the probability of a team winning using match context (runs, overs, wickets, etc.)
-- Built using a **Random Forest Classifier**
-- Fully deployed using **Streamlit Cloud** for public access
-- Real match data processed and cleaned for model training
-
----
-
-## 🧠 Key Features
-
-- End-to-end ML workflow: Data preprocessing → Model training → Web deployment
-- Real-time user input to simulate live match scenarios
-- Dynamic calculation of features like:
-  - Runs left
-  - Balls left
-  - Wickets remaining
-  - Current run rate vs. required run rate
+## 🚀 Features
+- Interactive **Streamlit web app**
+- Choose **batting team, bowling team, and venue**
+- Enter match details: target, score, overs, wickets
+- Predict **win probability (%)**
+- Visualize **probability progression** until 20 overs
+- Built using:
+  - `scikit-learn` (Random Forest + pipeline)
+  - `pandas`, `numpy`
+  - `matplotlib` / `plotly` for visualization
+  - `streamlit` for deployment
 
 ---
 
-## 🔧 Tech Stack
+## 📊 Example
+- **Target:** 156  
+- **Score:** 80/2 after 5 overs  
+- The app predicts:  
+  - Batting team: **93% win probability**  
+  - Bowling team: **7% win probability**  
+- Graph shows win probability curve across remaining overs.
 
-- **Python**
-- **Pandas** for data manipulation
-- **Scikit-learn** for machine learning
-- **Streamlit** for web app interface
+---
+
+## 🛠️ Installation & Usage
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/ipl_win_predictor.git
+cd ipl_win_predictor
+
 - **Matplotlib / Seaborn** for exploratory analysis (optional)
 
 ---
