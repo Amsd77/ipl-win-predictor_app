@@ -20,12 +20,20 @@ Given the current match situation (target, score, overs, wickets), the app predi
 ---
 
 ## 📊 Example
-- **Target:** 156  
-- **Score:** 80/2 after 5 overs  
-- The app predicts:  
-  - Batting team: **93% win probability**  
-  - Bowling team: **7% win probability**  
-- Graph shows win probability curve across remaining overs.
+
+### Scenario 1 – Batting team ahead  
+- **Target:** 180  
+- **Score:** 95/1 after 10 overs  
+
+![Batting Win Example](scenario1.png)
+
+---
+
+### Scenario 2 – Bowling team ahead  
+- **Target:** 170  
+- **Score:** 70/5 after 12 overs  
+
+![Bowling Win Example](scenario2.png)
 
 ---
 
